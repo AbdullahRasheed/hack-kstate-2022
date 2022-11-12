@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nJ7ofRre8LO/29ZmRqEpjbIVLKaOCTFqQ6PEB64MIEI=",
+  "Source": "leaderboard-service",
+  "BasePath": "_content/leaderboard-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

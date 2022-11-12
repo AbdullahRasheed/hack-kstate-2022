@@ -15,7 +15,7 @@ function Loading() {
                 <p>
                     Loading...
                 </p>
-                <Button variant="primary" size="lg" onClick={Reload}>Reload</Button>
+                <Button variant="secondary" size="lg" onClick={Reload}>Reload</Button>
             </header>
         </div>
     );

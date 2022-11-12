@@ -1,9 +1,9 @@
 import { Outlet, Link } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Containter from 'react-bootstrap/Container'
+import Containter from 'react-bootstrap/Container';
 
-var signedIn = true;
+var signedIn = false;
 
 function loggedIn() {
     if (signedIn) {

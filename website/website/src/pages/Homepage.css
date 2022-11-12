@@ -1,0 +1,23 @@
+.Homepage {
+    text-align: center;
+  }
+
+.Homepage-header {
+    background-color: #282c34;
+    min-height: 15vh;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .Homepage-p {
+    background-color: #282c34;
+    min-height: 100vh;
+    align-content: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }

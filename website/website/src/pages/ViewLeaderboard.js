@@ -19,8 +19,12 @@ const Submit = e => {
 
 async function SubmitData(data) {
     console.log(data);
-    await PostUser("ViewLeaderboard", data)
-
+    //await PostUser("ViewLeaderboard", data)
+    const reg = {
+        username: "test",
+        password: "test"
+    }
+    await PostUser("autb/register", reg);
 }
 
 function ViewLeaderboard() {
@@ -28,7 +32,7 @@ function ViewLeaderboard() {
         <div className='ViewLeaderboard'>
             <section className='ViewLeaderboard-section'>
                 <h1>Leaderboard Topic</h1>
-                <Table striped bordered hover size='sm'>
+                <Table striped bordered size='sm'>
                     <thead>
                         <tr>
                             <th>Rank</th>

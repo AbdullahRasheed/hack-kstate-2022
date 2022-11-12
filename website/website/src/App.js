@@ -2,7 +2,7 @@ import './App.css';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import Loading from './pages/Loading';
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
@@ -11,7 +11,7 @@ import Layout from './pages/Layout';
 
 function App() {
   return (  
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="*" element={<Loading />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
     );
 }
 

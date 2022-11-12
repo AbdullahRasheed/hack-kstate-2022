@@ -9,8 +9,8 @@ namespace user_service.Data
         [BsonId]
         public ObjectId Id { get; set; }
 
-        public string Username { get; set; }
+        public string Username { get; set; } = null!;
 
-        public List<ObjectId> Leaderboards { get; set; }
+        public List<ObjectId> Leaderboards { get; set; } = null!;
     }
 }

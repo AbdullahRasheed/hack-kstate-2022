@@ -7,7 +7,7 @@ function SignUp() {
   return (
     <Form>
       <Form.Group className="m-5" controlId="formBasicUsername">
-        <Form.Label>SignUp</Form.Label>
+        <Form.Label>Sign Up</Form.Label>
           <FloatingLabel
             controlId="floatingInput"
             label="Username"

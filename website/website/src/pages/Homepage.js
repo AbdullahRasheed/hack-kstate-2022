@@ -1,5 +1,16 @@
+import './Homepage.css';
+
 const Homepage = () => {
-    return <h1>Home</h1>;
+    return (
+        <div className='Homepage'>
+            <h1 className='Homepage-header'>
+                Welcome to LeadTheBoard
+            </h1>
+            <p className='Homepage-p'>  
+                Hello
+            </p> 
+        </div>
+    )
   };
   
   export default Homepage;

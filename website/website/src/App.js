@@ -1,8 +1,6 @@
 import './App.css';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ReactDOM from "react-dom/client";
-import { Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from './pages/Loading';
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';

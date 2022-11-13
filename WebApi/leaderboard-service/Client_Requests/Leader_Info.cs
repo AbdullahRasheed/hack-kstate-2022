@@ -2,7 +2,7 @@
 {
     public class Leader_Info
     {
-        public string Leaderboard_id { get; set; }
+        public string? Leaderboard_id { get; set; }
 
 
     }

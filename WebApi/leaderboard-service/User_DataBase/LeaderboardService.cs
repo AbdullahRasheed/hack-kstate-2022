@@ -24,6 +24,11 @@ namespace leaderboard_service.User_DataBase
 
         public async Task InsertAsync(Leaderboard_Data lb) => await _collection.InsertOneAsync(lb);
 
-        public async Task ReplaceAsync(string id, Leaderboard_Data lb) => await _collection.ReplaceOneAsync(lb => id.ToString() == user.Id.ToString(), user);
+        public async Task ReplaceAsync(string id, Leaderboard_Data l) => await _collection.ReplaceOneAsync(lb => id.ToString() == lb.Id.ToString(), l);
+
+        public async Task<UpdateResult> Push(string id, User_Data user_Datas) => await _collection.UpdateOneAsync(lb => id.ToString() == lb.Id.ToString(),
+            Builders<Leaderboard_Data>.Update.Push<User_Data>(lb => lb.Users, user_Datas));
+
+
     }
 }

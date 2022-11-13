@@ -16,10 +16,12 @@ namespace user_service.Controllers
     {
 
         private readonly LoginService _loginService;
+        private readonly UserService _userService;
 
-        public LoginController(LoginService loginService)
+        public LoginController(LoginService loginService, UserService userService)
         {
             _loginService = loginService;
+            _userService = userService;
         }
 
         [HttpPost("register")]
@@ -42,6 +44,12 @@ namespace user_service.Controllers
             };
 
             await _loginService.InsertAsync(newLogin);
+            await _userService.InsertAsync(new User
+            {
+                Id = newLogin.Id,
+                Username = creds.Username,
+                Leaderboards = new()
+            });
 
             await GenerateToken(new()
             {
@@ -49,6 +57,30 @@ namespace user_service.Controllers
             });
 
             return Ok();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> LoginUser([FromBody] LoginCredentials creds)
+        {
+            UserLogin? login = await _loginService.FindByUsernameAsync(creds.Username);
+            if (login is null)
+            {
+                return BadRequest();
+            }
+
+            if(Verify(creds.Password, login.PasswordHash, login.PasswordSalt))
+            {
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.NameIdentifier, login.Id.ToString())
+                };
+
+                await GenerateToken(claims);
+
+                return Ok();
+            }
+
+            return BadRequest();
         }
 
         [ApiExplorerSettings(IgnoreApi = true)]

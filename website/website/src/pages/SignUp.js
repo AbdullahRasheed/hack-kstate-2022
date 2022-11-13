@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import './SignUp.css'
-import PostUser from './Connections/REST';
+import PostUser, { GetLeaderboards } from './Connections/REST';
 
 const Submit = e => {
     e.preventDefault()
@@ -14,6 +14,7 @@ const Submit = e => {
 async function SubmitData(data) {
     console.log(data);
     await PostUser("auth/register", data);
+    await GetLeaderboards("user/leaderboards");
 }
 
 function SignUp() {

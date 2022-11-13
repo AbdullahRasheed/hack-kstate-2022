@@ -1,4 +1,7 @@
 import './Homepage.css';
+import Button from 'react-bootstrap/esm/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 
 const Homepage = () => {
     return (
@@ -9,6 +12,7 @@ const Homepage = () => {
             <p className='Homepage-p'>  
                 Hello
             </p> 
+            <Button></Button>
         </div>
     )
   };

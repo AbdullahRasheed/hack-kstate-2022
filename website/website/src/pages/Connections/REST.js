@@ -1,7 +1,12 @@
 import axios from 'axios';
 
+var uid = '';
+
 async function PostUser(url, body){
-    return await axios.post('https://localhost:7266/' + url, body);
+    return await axios.post('https://localhost:7266/' + url, body, {withCredentials: true, 
+    headers: {
+        "access-control-request-headers": "*"
+    }});
 }
 
 async function PostLeaderboard(url, body){
@@ -10,7 +15,7 @@ async function PostLeaderboard(url, body){
 
 async function GetLeaderboards(url){
     var res;
-    await axios.get(url).then(response => (res = response))
+    await axios.get('https://localhost:7266/' + url, {withCredentials: true}).then(response => (res = response))
         .catch(res = null);
 
     return res;

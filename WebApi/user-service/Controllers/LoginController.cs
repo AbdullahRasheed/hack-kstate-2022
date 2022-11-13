@@ -4,7 +4,6 @@ using System.Security.Cryptography;
 using System.Text;
 using user_service.Data;
 using user_service.Database;
-using user_service.Security;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 

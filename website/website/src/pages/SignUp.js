@@ -2,19 +2,22 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import './SignUp.css'
-import PostUser, { GetLeaderboards } from './Connections/REST';
+import PostUser from './Connections/REST';
+import { useNavigate } from 'react-router-dom';
 
 const Submit = e => {
+  const navigate = useNavigate();
+
     e.preventDefault()
     const formData = new FormData(e.target)
     const formDataObj = Object.fromEntries(formData.entries())
-    SubmitData(formDataObj);
+    SubmitData(formDataObj, navigate);
 }
 
-async function SubmitData(data) {
+async function SubmitData(data, nav) {
     console.log(data);
     await PostUser("auth/register", data);
-    await GetLeaderboards("user/leaderboards");
+    nav("viewleaderboard");
 }
 
 function SignUp() {

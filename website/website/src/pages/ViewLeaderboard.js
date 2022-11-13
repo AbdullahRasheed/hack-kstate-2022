@@ -9,6 +9,7 @@ import './ViewLeaderboard.css'
 import { PostLeaderboard } from './Connections/REST'
 import { GetLeaderboards } from './Connections/REST';
 import { GetLeaderboardData } from './Connections/REST';
+import { useCallback, useEffect, useState } from 'react';
 
 const Submit = e => {
     e.preventDefault()
@@ -22,17 +23,17 @@ async function SubmitData(data) {
     await PostLeaderboard("ViewLeaderboard", data);
 }
 
-function GetLBs() {
-    return GetLeaderboards("");
+async function GetLBs() {
+    return await GetLeaderboards("user/leaderboards");
 }
 
-function GetLBData(id) {
-    return GetLeaderboardData("", id)
+async function GetLBData(lid) {
+    return await GetLeaderboardData("leaderboard/info", {id: lid})
 }
 
-function DisplayOneLeaderboard(name, description) {
+function DisplayOneLeaderboard(name, description, k) {
     return (
-        <section className='ViewLeaderboard-section'>
+        <section key={k} className='ViewLeaderboard-section'>
             <h1>
                 {name}
             </h1>
@@ -61,23 +62,33 @@ function DisplayOneLeaderboard(name, description) {
     )
 }
 
-function DisplayLeaderboards() {
-    var leaderboards = GetLBs();
-
-    const data = leaderboards.ids.map(id => {
-        const info = GetLBData(id);
-        return DisplayOneLeaderboard(info.name, info.description);
-    })
-
-    return (
-        {data}
-    )
-}
-
 function ViewLeaderboard() {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const fetchInfo = async () => {
+            setData([]);
+            const lbs = await GetLBs();
+            console.log(lbs);
+            for(const id of lbs){
+                console.log(id);
+                const info = await GetLBData(id);
+                console.log(info);
+                setData(prev => {
+                    return [
+                        ...prev,
+                        {name: info.name, description: info.description}
+                    ]
+                });
+            }
+        }
+
+        fetchInfo();
+    }, []);
+
     return(
         <div className='ViewLeaderboard'>
-            {DisplayLeaderboards()}
+            {data.map((info, i) => DisplayOneLeaderboard(info.name, info.description, i))}
         </div>
     );
 }

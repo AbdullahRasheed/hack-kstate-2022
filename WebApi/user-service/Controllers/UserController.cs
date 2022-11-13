@@ -25,7 +25,7 @@ namespace user_service.Controllers
         [HttpGet("leaderboards")]
         public async Task<ActionResult> GetLeaderboardIds()
         {
-            ObjectId id = ObjectId.Parse(HttpContext.User.Claims.First().ToString());
+            ObjectId id = ObjectId.Parse(HttpContext.User.Claims.First().Value);
 
             User? user = await _userService.FindAsync(id);
             if(user is null)
@@ -38,9 +38,9 @@ namespace user_service.Controllers
 
         [Authorize]
         [HttpPost("join")]
-        public async Task<ActionResult> JoinLeaderboard(string id)
+        public async Task<ActionResult> JoinLeaderboard([FromBody] IdRequest id)
         {
-            ObjectId uid = ObjectId.Parse(HttpContext.User.Claims.First().ToString());
+            ObjectId uid = ObjectId.Parse(HttpContext.User.Claims.First().Value);
 
             User? user = await _userService.FindAsync(uid);
             if(user is null)
@@ -48,7 +48,7 @@ namespace user_service.Controllers
                 return BadRequest();
             }
 
-            await _userService.Push(ObjectId.Parse(id), user);
+            await _userService.Push(id.Id, user);
 
             return Ok();
         }

@@ -11,6 +11,6 @@ namespace user_service.Data
 
         public string Username { get; set; } = null!;
 
-        public List<ObjectId> Leaderboards { get; set; } = null!;
+        public List<string> Leaderboards { get; set; } = null!;
     }
 }

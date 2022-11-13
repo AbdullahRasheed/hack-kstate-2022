@@ -883,19 +883,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahras\\.nuget\\packages\\": {}
+    "C:\\Users\\thede\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahras\\Documents\\GitHub\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
+      "projectUniqueName": "C:\\Users\\thede\\Documents\\Github\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
       "projectName": "leaderboard-service",
-      "projectPath": "C:\\Users\\ahras\\Documents\\GitHub\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
-      "packagesPath": "C:\\Users\\ahras\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahras\\Documents\\GitHub\\hack-kstate-2022\\WebApi\\leaderboard-service\\obj\\",
+      "projectPath": "C:\\Users\\thede\\Documents\\Github\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
+      "packagesPath": "C:\\Users\\thede\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thede\\Documents\\Github\\hack-kstate-2022\\WebApi\\leaderboard-service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahras\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thede\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -953,7 +953,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

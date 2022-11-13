@@ -38,7 +38,8 @@ const Layout = () => {
                 LeadTheBoard
                 </Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href='/viewleaderboard'>View Leaderboards</Nav.Link>
+                    <Nav.Link href='/viewleaderboard'>View Your Leaderboards</Nav.Link>
+                    <Nav.Link href='/exploreleaderboard'>Explore Leaderboards</Nav.Link>
                     <Nav.Link href='/makeleaderboard'>Make a Leaderboard</Nav.Link>
                 </Nav>
                 {loggedIn()}

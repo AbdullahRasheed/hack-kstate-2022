@@ -28,7 +28,7 @@ namespace user_service.Database
 
         public async Task ReplaceAsync(string id, User user) => await _userCollection.ReplaceOneAsync(user => id.ToString() == user.Id.ToString(), user);
 
-        public async Task Push(ObjectId id, User user) => await _userCollection.UpdateOneAsync(u => user.Id.Equals(u.Id), Builders<User>.Update.Push(u => u.Leaderboards, id));
+        public async Task Push(string id, User user) => await _userCollection.UpdateOneAsync(u => user.Id.Equals(u.Id), Builders<User>.Update.Push("Leaderboards", id));
 
     }
 }

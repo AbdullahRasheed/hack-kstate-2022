@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import Layout from './pages/Layout';
 import ViewLeaderboard from './pages/ViewLeaderboard'
+import ExploreLeaderboard from './pages/ExploreLeaderboard'
 import MakeLeaderboard from './pages/MakeLeaderboard'
 import Profile from './pages/Profile'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
           <Route path="viewleaderboard" element={<ViewLeaderboard />} />
+          <Route path="exploreleaderboard" element={<ExploreLeaderboard />} />
           <Route path="makeleaderboard" element={<MakeLeaderboard />} />
           <Route path="profile" element={<Profile />} />
           <Route path="*" element={<Loading />} />

@@ -18,6 +18,8 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("http://localhost:3000");
         policy.AllowAnyHeader();
+        policy.AllowAnyMethod();
+        policy.AllowCredentials();
     });
 });
 
@@ -37,9 +39,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors(CorsPolicy);
+
 app.UseCookiePolicy(new CookiePolicyOptions
 {
-    MinimumSameSitePolicy = SameSiteMode.Strict
+    MinimumSameSitePolicy = SameSiteMode.None
 });
 
 app.UseAuthorization();

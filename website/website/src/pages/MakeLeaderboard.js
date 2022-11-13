@@ -22,7 +22,7 @@ const Submit = e => {
 
 async function SubmitData(data) {
     console.log(data);
-    await PostNewLeaderboard("MakeLeaderboard", data);
+    await PostNewLeaderboard("leaderboard/create", data);
 }
 
 function MakeLeaderboard() {
@@ -35,7 +35,7 @@ function MakeLeaderboard() {
                 label="Name"
                 className="mt-3"
                 >
-                <Form.Control name="username" type="username" placeholder="Username"/>
+                <Form.Control name="name" type="username" placeholder="Username"/>
             </FloatingLabel>
             <FloatingLabel
                 controlId="floatingInput"

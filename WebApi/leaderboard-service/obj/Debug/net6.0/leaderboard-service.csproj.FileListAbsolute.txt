@@ -25,14 +25,3 @@ C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\obj\D
 C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\obj\Debug\net6.0\leaderboard-service.pdb
 C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\obj\Debug\net6.0\leaderboard-service.genruntimeconfig.cache
 C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\obj\Debug\net6.0\ref\leaderboard-service.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\DnsClient.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\MongoDB.Bson.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\MongoDB.Driver.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\MongoDB.Driver.Core.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\SharpCompress.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\Snappier.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\ZstdSharp.dll
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\monst\Desktop\plzwork\hack-kstate-2022\WebApi\leaderboard-service\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll

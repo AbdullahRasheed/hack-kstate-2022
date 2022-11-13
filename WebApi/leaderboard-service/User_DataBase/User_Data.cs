@@ -6,8 +6,7 @@ namespace leaderboard_service.User_DataBase
     {
         public ObjectId Id { get; set; }
 
-        public Entry Best_Entry = null!;
+        public List<Entry> Entries { get; set; }
 
-        public List<Entry> Entries = null!;
     }
 }

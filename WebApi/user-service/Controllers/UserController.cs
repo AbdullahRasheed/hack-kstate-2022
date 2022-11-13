@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
+using System;
 using System.Security.Claims;
 using user_service.Data;
 using user_service.Database;
@@ -39,7 +40,17 @@ namespace user_service.Controllers
         [HttpPost("join")]
         public async Task<ActionResult> JoinLeaderboard(string id)
         {
+            ObjectId uid = ObjectId.Parse(HttpContext.User.Claims.First().ToString());
 
+            User? user = await _userService.FindAsync(uid);
+            if(user is null)
+            {
+                return BadRequest();
+            }
+
+            await _userService.Push(ObjectId.Parse(id), user);
+
+            return Ok();
         }
     }
 }

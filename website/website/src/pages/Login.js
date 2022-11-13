@@ -3,6 +3,18 @@ import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import './Login.css'
 
+const Submit = e => {
+    e.preventDefault()
+    const formData = new FormData(e.target)
+    const formDataObj = Object.fromEntries(formData.entries())
+    SubmitData(formDataObj);
+}
+
+async function SubmitData(data) {
+    console.log(data);
+    await PostUser("SignUp", data);
+}
+
 function Login() {
   return (
     <Form>

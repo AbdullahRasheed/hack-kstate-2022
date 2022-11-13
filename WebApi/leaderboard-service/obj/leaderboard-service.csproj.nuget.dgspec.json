@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\ahras\\Documents\\GitHub\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahras\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
+        "projectName": "leaderboard-service",
+        "projectPath": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
+        "packagesPath": "C:\\Users\\vinny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a16343b3fee61e2ab2659d9a66bd30b9731cf99f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

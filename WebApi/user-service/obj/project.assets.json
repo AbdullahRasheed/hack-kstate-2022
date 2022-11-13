@@ -54,14 +54,10 @@
       "Microsoft.IdentityModel.Abstractions/6.25.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.Abstractions.dll": {}
         }
       },
       "Microsoft.IdentityModel.JsonWebTokens/6.25.0": {
@@ -72,14 +68,10 @@
           "System.Text.Json": "4.7.2"
         },
         "compile": {
-          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
         }
       },
       "Microsoft.IdentityModel.Logging/6.25.0": {
@@ -88,14 +80,10 @@
           "Microsoft.IdentityModel.Abstractions": "6.25.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.Logging.dll": {}
         }
       },
       "Microsoft.IdentityModel.Tokens/6.25.0": {
@@ -106,14 +94,10 @@
           "System.Security.Cryptography.Cng": "4.5.0"
         },
         "compile": {
-          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {
@@ -362,14 +346,10 @@
           "Microsoft.IdentityModel.Tokens": "6.25.0"
         },
         "compile": {
-          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         },
         "runtime": {
-          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
+          "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
       "System.Runtime/4.3.0": {
@@ -379,9 +359,7 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         },
         "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {
@@ -423,9 +401,7 @@
       "System.Security.Cryptography.Cng/4.5.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {
-            "related": ".xml"
-          }
+          "ref/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
         },
         "runtime": {
           "lib/netcoreapp2.1/System.Security.Cryptography.Cng.dll": {}
@@ -468,22 +444,16 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Text.Encoding.dll": {
-            "related": ".xml"
-          }
+          "ref/netstandard1.3/System.Text.Encoding.dll": {}
         }
       },
       "System.Text.Json/4.7.2": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
         },
         "runtime": {
-          "lib/netcoreapp3.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
       "ZstdSharp.Port/0.6.2": {
@@ -1471,11 +1441,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\ahras\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\vinny\\.nuget\\packages\\": {}
+>>>>>>> a16343b3fee61e2ab2659d9a66bd30b9731cf99f
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ahras\\Documents\\GitHub\\hack-kstate-2022\\WebApi\\user-service\\user-service.csproj",
       "projectName": "user-service",
       "projectPath": "C:\\Users\\ahras\\Documents\\GitHub\\hack-kstate-2022\\WebApi\\user-service\\user-service.csproj",
@@ -1484,6 +1459,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahras\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\user-service\\user-service.csproj",
+      "projectName": "user-service",
+      "projectPath": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\user-service\\user-service.csproj",
+      "packagesPath": "C:\\Users\\vinny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\user-service\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> a16343b3fee61e2ab2659d9a66bd30b9731cf99f
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

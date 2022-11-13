@@ -826,24 +826,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\monst\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\vinny\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\monst\\Desktop\\plzwork\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
+      "projectUniqueName": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
       "projectName": "leaderboard-service",
-      "projectPath": "C:\\Users\\monst\\Desktop\\plzwork\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
-      "packagesPath": "C:\\Users\\monst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\monst\\Desktop\\plzwork\\hack-kstate-2022\\WebApi\\leaderboard-service\\obj\\",
+      "projectPath": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\leaderboard-service.csproj",
+      "packagesPath": "C:\\Users\\vinny\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vinny\\VSCode Projects\\hack-kstate-2022\\WebApi\\leaderboard-service\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\monst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\vinny\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

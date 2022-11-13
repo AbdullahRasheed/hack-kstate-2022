@@ -21,7 +21,7 @@ function Login() {
         <FloatingLabel
           controlId="floatingInput"
           label="Password"
-          className="mb-3"
+          className="mt-3"
         >
           <Form.Control type="password" placeholder="Password" />
         </FloatingLabel>

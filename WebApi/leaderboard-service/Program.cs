@@ -10,6 +10,8 @@ builder.Services.Configure<LeaderboardDatabaseSettings>(
     builder.Configuration.GetSection("LeaderboardDatabase")
 );
 
+builder.Services.AddSingleton<LeaderboardService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(CorsPolicy, policy =>

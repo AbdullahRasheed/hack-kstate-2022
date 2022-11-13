@@ -13,7 +13,7 @@ const Submit = e => {
 
 async function SubmitData(data) {
     console.log(data);
-    await PostUser("SignUp", data);
+    await PostUser("auth/register", data);
 }
 
 function SignUp() {
@@ -36,9 +36,6 @@ function SignUp() {
         >
           <Form.Control name="password" type="password" placeholder="Password" />
         </FloatingLabel>
-        <Form.Text className="text-muted">
-        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji
-        </Form.Text>
       </Form.Group>
       <Button className="mx-5" variant="primary" type="submit" >
         Register
